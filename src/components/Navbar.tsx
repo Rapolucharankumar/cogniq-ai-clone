@@ -23,7 +23,7 @@ export default function Navbar() {
             <div className="mx-auto flex max-w-7x1 items-center justify-between px-6 lg:px-8">
                 <Link href="/" className="flex items-center gap-2">
                     <Image
-                        src="/logo.svg"
+                        src="/HeaderFooter/HeaderCompanyLogo.svg"
                         alt="Cogniq AI Logo"
                         width={178}
                         height={38}

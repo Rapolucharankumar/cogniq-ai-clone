@@ -10,11 +10,11 @@ export default function Footer() {
                     <div className="col-span-2 md:col-span-3 lg:col-span-1">
                         <Link href="/" className="flex items-center gap-2">
                             <Image
-                                src="/logo.svg"
+                                src="/HeaderFooter/FooterCompanyLogo.svg"
                                 alt="Cogniq AI Logo"
                                 width={178}
                                 height={38}
-                                className="h-8 w-auto brightness-0 invert"
+                                className="h-8 w-auto"
                             />
                         </Link>
                         <p className="mt-4 text-xs font-bold uppercase tracking-widest text-primary">
@@ -23,20 +23,20 @@ export default function Footer() {
                         <p className="mt-4 text-sm leading-6 text-zinc-400">
                             Building intelligent AI apps that transform how you interact with technology.
                         </p>
-                        <div className="mt-8 flex flex-col gap-2">
+                        <div className="mt-8 flex items-center gap-4">
                             {[
-                                { name: "Instagram", href: "https://www.instagram.com/cogniq_ai" },
-                                { name: "X", href: "https://x.com/cogniq_ai" },
-                                { name: "LinkedIn", href: "https://www.linkedin.com/company/the-cogniq-ai" },
+                                { name: "Instagram", href: "https://www.instagram.com/cogniq_ai", icon: "/HeaderFooter/SocialInstagram.svg" },
+                                { name: "X", href: "https://x.com/cogniq_ai", icon: "/HeaderFooter/SocialX.svg" },
+                                { name: "LinkedIn", href: "https://www.linkedin.com/company/the-cogniq-ai", icon: "/HeaderFooter/SocialLinkedin.svg" },
                             ].map((social) => (
                                 <a
                                     key={social.name}
                                     href={social.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-sm text-zinc-400 hover:text-primary transition-colors"
+                                    className="text-sm text-zinc-400 hover:text-primary transition-colors flex items-center justify-center h-10 w-10 rounded-full bg-zinc-900 border border-zinc-800"
                                 >
-                                    {social.name}
+                                    <Image src={social.icon} alt={social.name} width={20} height={20} />
                                 </a>
                             ))}
                         </div>

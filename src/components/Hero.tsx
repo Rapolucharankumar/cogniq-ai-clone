@@ -12,19 +12,19 @@ export default function Hero() {
                 {/* Floating Icons */}
                 <div className="absolute -top-20 left-10 md:left-20 animate-scale-up-visible opacity-0" style={{ animationDelay: '0.5s' }}>
                     <div className="h-16 w-16 md:h-20 md:w-20 rounded-full bg-white shadow-[0px_14px_44px_0px_rgba(216,216,216,0.45)] flex items-center justify-center animate-float">
-                        <Image src="/IdeaIconHero.svg" alt="Idea" width={42} height={42} className="h-10 w-10" />
+                        <Image src="/HomePage/IdeaIconHero.svg" alt="Idea" width={42} height={42} className="h-10 w-10" />
                     </div>
                 </div>
 
                 <div className="absolute -top-10 right-10 md:right-20 animate-scale-up-visible opacity-0" style={{ animationDelay: '0.7s' }}>
                     <div className="h-16 w-16 md:h-20 md:w-20 rounded-full bg-white shadow-[0px_14px_44px_0px_rgba(216,216,216,0.45)] flex items-center justify-center animate-float" style={{ animationDelay: '0.5s' }}>
-                        <Image src="/BullsEyeHero.svg" alt="Bulls Eye" width={40} height={40} className="h-10 w-10" />
+                        <Image src="/HomePage/BullsEyeHero.svg" alt="Bulls Eye" width={40} height={40} className="h-10 w-10" />
                     </div>
                 </div>
 
                 <div className="absolute -bottom-10 right-20 md:right-40 animate-scale-up-visible opacity-0" style={{ animationDelay: '0.9s' }}>
                     <div className="h-16 w-16 md:h-20 md:w-20 rounded-full bg-white shadow-[0px_14px_44px_0px_rgba(216,216,216,0.45)] flex items-center justify-center animate-float" style={{ animationDelay: '1s' }}>
-                        <Image src="/MagicSparklesHero.svg" alt="Magic" width={29} height={29} className="h-8 w-8" />
+                        <Image src="/HomePage/MagicSparklesHero.svg" alt="Magic" width={29} height={29} className="h-8 w-8" />
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@ export default function Hero() {
                             href="/services"
                             className="text-sm font-semibold leading-6 text-primary-dark hover:text-primary transition-colors flex items-center gap-2"
                         >
-                            See Our Services <span aria-hidden="true">→</span>
+                            See Our Services <Image src="/HomePage/Arrow 2.svg" alt="Arrow" width={16} height={16} />
                         </Link>
                     </div>
                 </div>

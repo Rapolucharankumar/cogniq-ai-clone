@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function OurLab() {
     return (
@@ -43,7 +44,7 @@ export default function OurLab() {
                                     href="#"
                                     className="rounded-full bg-primary-dark px-8 py-4 text-sm font-semibold text-white shadow-xl hover:bg-black transition-all"
                                 >
-                                    Explore PostGenius
+                                    <span className="flex items-center gap-2">Explore PostGenius <Image src="/OurLabPage/Arrow 1.svg" alt="Arrow" width={16} height={16} /></span>
                                 </Link>
                             </div>
                         </div>

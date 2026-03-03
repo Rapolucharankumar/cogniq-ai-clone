@@ -1,21 +1,26 @@
 import FeatureCard from "./FeatureCard";
+import Image from "next/image";
 
 const services = [
     {
         title: "AI-Powered Customer Service",
         description: "Automate your support with intelligent agents that handle queries 24/7 with human-like accuracy.",
+        icon: <Image src="/HomePage/OurServicesCustomer.svg" alt="Customer Service" width={24} height={24} />
     },
     {
         title: "Workflow Automation",
         description: "Streamline your business operations with custom AI-driven workflows that save time and reduce errors.",
+        icon: <Image src="/HomePage/OurServicesScheduling.svg" alt="Workflow" width={24} height={24} />
     },
     {
         title: "Predictive Analytics",
         description: "Harness the power of your data to predict trends, customer behavior, and optimize your strategy.",
+        icon: <Image src="/HomePage/OurServicesInventory.svg" alt="Analytics" width={24} height={24} />
     },
     {
         title: "Custom AI Agents",
         description: "Bespoke AI solutions tailored to your unique business needs, from internal tools to client-facing apps.",
+        icon: <Image src="/HomePage/OurServicesTools.svg" alt="AI Agents" width={24} height={24} />
     },
 ];
 
@@ -39,6 +44,7 @@ export default function Features() {
                                 key={index}
                                 title={service.title}
                                 description={service.description}
+                                icon={service.icon}
                             />
                         ))}
                     </div>
