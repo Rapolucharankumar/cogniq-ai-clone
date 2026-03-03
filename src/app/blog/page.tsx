@@ -30,18 +30,18 @@ export default function Blog() {
     return (
         <div className="flex min-h-screen flex-col">
             <Navbar />
-            <main className="flex-grow pt-32 pb-20 bg-zinc-50 relative">
+            <main className="flex-grow pt-[80px] pb-[80px] lg:pt-[120px] lg:pb-[120px] bg-zinc-50 relative">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
                     <div className="mx-auto max-w-2xl text-center">
-                        <h1 className="text-4xl font-bold tracking-tight text-primary-dark sm:text-6xl">Blog & Insights</h1>
-                        <p className="mt-6 text-lg leading-8 text-secondary">
+                        <h1 className="text-[36px] leading-[44px] md:text-[52px] md:leading-[62.4px] font-bold tracking-[1.04px] text-primary-dark transition-all duration-300">Blog & Insights</h1>
+                        <p className="mt-[24px] text-[16px] md:text-[19px] leading-[28px] md:leading-[32.3px] text-[#666666]">
                             Latest from Cogniq AI - deep dives into the impact of intelligent automation.
                         </p>
                     </div>
 
-                    <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                    <div className="mx-auto mt-[80px] lg:mt-[120px] grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                         {posts.map((post) => (
-                            <article key={post.title} className="flex flex-col items-start justify-between bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all border border-zinc-100 overflow-hidden group">
+                            <article key={post.title} className="flex flex-col items-start justify-between bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-zinc-100 overflow-hidden group">
                                 <div className="relative w-full aspect-[16/9] overflow-hidden bg-zinc-100">
                                     <Image src={post.image} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                                 </div>
@@ -50,18 +50,18 @@ export default function Blog() {
                                         <time dateTime="2026-03-02" className="text-zinc-500">
                                             {post.date}
                                         </time>
-                                        <span className="relative z-10 rounded-full bg-primary/10 px-3 py-1.5 font-medium text-primary">
+                                        <span className="relative z-10 rounded-[6px] bg-[#F2F3FF] px-3 py-1.5 font-medium text-[#4636B9]">
                                             {post.category}
                                         </span>
                                     </div>
                                     <div className="group relative">
-                                        <h3 className="mt-4 text-xl font-bold leading-tight text-primary-dark group-hover:text-primary transition-colors">
+                                        <h3 className="mt-4 text-[24px] font-bold leading-tight text-primary-dark group-hover:text-[#4636B9] transition-colors duration-300">
                                             <a href="#">
                                                 <span className="absolute inset-0" />
                                                 {post.title}
                                             </a>
                                         </h3>
-                                        <p className="mt-4 line-clamp-3 text-sm leading-6 text-secondary">{post.excerpt}</p>
+                                        <p className="mt-4 line-clamp-3 text-[16px] leading-[28px] text-[#666666]">{post.excerpt}</p>
                                     </div>
                                 </div>
                             </article>

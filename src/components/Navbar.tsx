@@ -53,7 +53,7 @@ export default function Navbar() {
 
                 <Link
                     href="/contact"
-                    className="rounded-full bg-gradient-primary px-6 py-2.5 text-sm font-semibold text-white shadow-lg transition-all hover:scale-105 active:scale-95"
+                    className="rounded-[6px] bg-[#4636B9] px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#3b2b9e] hover:shadow-md active:scale-95"
                 >
                     Contact Us
                 </Link>

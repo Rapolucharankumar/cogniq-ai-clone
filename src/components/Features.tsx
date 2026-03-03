@@ -26,14 +26,14 @@ const services = [
 
 export default function Features() {
     return (
-        <section className="bg-zinc-50 py-24 lg:py-32">
+        <section className="bg-zinc-50 pt-[80px] pb-[80px] lg:pt-[120px] lg:pb-[120px]">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-base font-semibold leading-7 text-primary uppercase tracking-wide">Our Services</h2>
-                    <p className="mt-2 text-3xl font-bold tracking-tight text-primary-dark sm:text-4xl">
+                    <h2 className="text-base font-semibold leading-7 text-[#4636B9] uppercase tracking-[1px]">Our Services</h2>
+                    <p className="mt-2 text-[32px] md:text-[40px] font-bold tracking-tight text-zinc-900 md:leading-[48px]">
                         Everything you need to <span className="text-gradient">scale with AI</span>
                     </p>
-                    <p className="mt-6 text-lg leading-8 text-secondary">
+                    <p className="mt-[24px] text-[16px] md:text-[19px] leading-[28px] md:leading-[32.3px] text-[#666666]">
                         We provide cutting-edge AI solutions that help modern businesses stay ahead of the curve.
                     </p>
                 </div>
