@@ -25,7 +25,7 @@ export default function Home() {
                 </p>
               </div>
               <Link
-                href="/about"
+                href="/about-us"
                 className="whitespace-nowrap rounded-full bg-white px-8 py-4 text-sm font-semibold text-primary-dark shadow-sm hover:bg-zinc-100 transition-all"
               >
                 Know more about Us
@@ -48,7 +48,7 @@ export default function Home() {
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <Link
-                  href="/strategy-call"
+                  href="/contact"
                   className="rounded-full bg-gradient-primary px-8 py-4 text-sm font-semibold text-white shadow-xl transition-all hover:scale-105"
                 >
                   Book a Strategy Call

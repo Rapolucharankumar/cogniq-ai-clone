@@ -37,7 +37,7 @@ export default function Hero() {
                     </p>
                     <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
                         <Link
-                            href="/strategy-call"
+                            href="/contact"
                             className="w-full sm:w-auto rounded-full bg-gradient-primary px-8 py-4 text-sm font-semibold text-white shadow-xl transition-all hover:scale-105 active:scale-95"
                         >
                             Book a Strategy Call
