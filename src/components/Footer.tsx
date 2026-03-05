@@ -109,10 +109,19 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="mt-20 border-t border-zinc-800 pt-8">
-                    <p className="text-xs leading-5 text-zinc-500 text-center lg:text-left">
+                <div className="mt-20 border-t border-zinc-800 pt-8 pb-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p className="text-xs leading-5 text-zinc-500 text-center md:text-left">
                         &copy; 2026 Cogniq AI. All Rights Reserved.
                     </p>
+                    <div className="text-xs leading-5 text-zinc-500 text-center md:text-right">
+                        <p>Built as a frontend cloning exercise using Next.js and Tailwind CSS.</p>
+                        <p>
+                            Created by Rapolu Charan.{' '}
+                            <Link href="https://github.com/Rapolucharankumar/cogniq-ai-clone" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors underline">
+                                View code on GitHub
+                            </Link>.
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>
